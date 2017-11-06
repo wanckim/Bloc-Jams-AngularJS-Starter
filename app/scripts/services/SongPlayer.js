@@ -50,10 +50,10 @@
     };
 
     /**
-    * @desc Active song object from list of songs
+    * @desc Active FIRST song object from list of songs
     * @type {Object}
     */
-    SongPlayer.currentSong = null
+    setSong(currentAlbum.songs[0]);
 
     /**
     * @function play
