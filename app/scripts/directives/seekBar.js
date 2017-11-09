@@ -45,7 +45,7 @@
         /**
         * @function fillStyle
         * @desc Returns the width of the seek bar fill element based on the calculated percent
-        * @returns {Object}
+        * @returns {Object} width
         */
         scope.fillStyle = function() {
           return {width: percentString()};
@@ -77,6 +77,15 @@
             $document.unbind('mousemove.thumb');
             $document.unbind('mouseup.thumb');
           });
+        };
+
+        /**
+        * @function thumbStyle
+        * @desc Updates the position of the seek-bar thumb
+        * @returns {Object} left
+        */
+        scope.thumbStyle = function() {
+          return {left: percentString()};
         };
       }
     };
