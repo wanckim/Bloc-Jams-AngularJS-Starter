@@ -78,6 +78,13 @@
     SongPlayer.currentTime = null;
 
     /**
+    * @desc Holds the default value of the volume and set the volume for accroding thumb position
+    * @type {Number}
+    */
+    SongPlayer.volume = '80';
+    currentBuzzObject.setVolume(SongPlayer.volume);
+
+    /**
     * @function play
     * @desc Play current or new song
     * @param {Object} song
@@ -147,6 +154,17 @@
     SongPlayer.setCurrentTime = function(time) {
       if (currentBuzzObject) {
         currentBuzzObject.setTime(time);
+      }
+    };
+
+    /**
+    * @function setVolume
+    * @desc Set the volume of the song
+    * @param {Number} volume
+    */
+    SongPlayer.setVolume = function(volume) {
+      if (currentBuzzObject) {
+        currentBuzzObject.setVolume(volume);
       }
     };
 

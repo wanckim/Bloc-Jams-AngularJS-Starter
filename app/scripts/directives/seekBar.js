@@ -102,8 +102,8 @@
 
         /**
         * @function notifyOnChange
-        * @desc
-        * @param {}
+        * @desc Value gets updated whenever there is a change on the seek-bar interface
+        * @param {Number}
         */
         var notifyOnChange = function(newValue) {
           if (typeof scope.onChange === 'function') {
